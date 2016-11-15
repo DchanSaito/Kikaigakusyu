@@ -1,0 +1,8 @@
+version: '2'
+services:
+  tensorflow:
+    build: .
+    volumes:
+      - './data:/tensorflow/data'
+    ports:
+      - '8888:8888'
