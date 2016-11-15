@@ -1,7 +1,8 @@
 version: '2'
 services:
   tensorflow:
-    build: .
+    # build: .
+    image: b.gcr.io/tensorflow/tensorflow
     volumes:
       - './data:/tensorflow/data'
     ports:
